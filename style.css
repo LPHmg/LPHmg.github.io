@@ -12,7 +12,9 @@
 .bordered{
     border: 20px solid #000;
 }
-
+break{
+    clear: both;
+}
 
 h2{
 
