@@ -1,8 +1,18 @@
-h1{
+.big{
+    
     text-align:center;
+    color:black;
 }
-img{float:left;
+.small{
+    text-align:center;
+    color:blueviolet;
 }
+.original{float:left;
+}
+.bordered{
+    border: 20px solid #000;
+}
+
 
 h2{
 
