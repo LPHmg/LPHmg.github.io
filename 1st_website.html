@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang>
 <head>
+    <meta charset="utf-8">
     <title>my first website</title>
+    <meta name="description" content="first website for Mobile Web Dev course at CSM by Higino Lopez-Paz">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>$(document).ready(function(){
+        $("button").on('click',function(){
+            var $h1= $('h1');
+            $h1.animate({fontSize:'3em',},"slow");
+            $h1.addClass('small');
+            $h1.animate({fontSize: '2em'}, "slow");
+            var timer = setTimeout(function(){$h1.removeClass('small')}, 2000);
+            $('img').addClass('bordered');
+            
+            });
+        });
+    </script>
  </head>
  <body>
-    <h1>Simple HTML & CSS Page</h1>
-    <img src="me.jpg" height="200" alt="this is a picture of me" title="A picture of me"
+    <h1 class="big">Simple HTML & CSS Page</h1>
+    <img class="original" src="me.jpg" height="200" alt="this is a picture of me" title="A picture of me"
     >
     <p>My name is Higinio Lopez-Paz and I am currently a second year at CSM in Computer Science but I want to end up in Evironmental Science at some point in my education or career. </p>
     
@@ -44,6 +59,7 @@
     -This website takes you to thr youtube channel BrodCode
     </li>
     </ul>
+    <button type="button"> Button </button>
  </body>
 
 </html>
